@@ -19,12 +19,16 @@
       height: 100%;
     }
 
-    .anchor{
-    display: block; 
-    position: relative;
-    top: -100px; 
-    visibility: hidden;
-  }
+    #footerJumbo {
+      margin-bottom: 0;
+    }
+
+    .anchor {
+      display: block;
+      position: relative;
+      top: -100px;
+      visibility: hidden;
+    }
 
     .jumbotron {
       margin-top: 20px;
@@ -47,22 +51,22 @@
 </head>
 
 <body>
- <header>
+  <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" alt="" href="#"><img class="image-fluid" height="50px" src="./bootstrap-4.png"></img> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul id="myList"  class="navbar-nav mr-auto text-center">
-            <li  class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-        </div>
-      </nav>
- </header>
+      <a class="navbar-brand" alt="" href="#"><img class="image-fluid" height="50px" src="./bootstrap-4.png"></img> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="myList" class="navbar-nav mr-auto text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+      </div>
+    </nav>
+  </header>
 
 
   <main class="bd-content container" role="main">
@@ -78,12 +82,32 @@
         </p>
       </div>
     </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Love memes</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="randomMeme" src=""></img>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Hope you had fun</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div id="Spinner Showcase anchor" class="anchor" ></div>
-    <div  data-aos="fade-left" class="previewElement border border-success rounded container-fluid ">
-      <div  class="card-body"> 
+    <div id="Spinner Showcase anchor" class="anchor"></div>
+    <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid ">
+      <div class="card-body">
         <h2>Spinner Showcase</h2>
-        <p>Wonderfull fidged.... no just loding spinners.</p>
+        <p>Wonderfull fidged.... no just loading spinners.</p>
         <div class="pb-5">
           <div class="spinner-border text-primary" role="status">
             <span class="sr-only">Loading...</span>
@@ -143,18 +167,22 @@
       </div>
     </div>
 
-    <div id="Progress Showcase anchor" class="anchor" ></div>
+    <div id="Progress Showcase anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Progress Showcase</h2>
         <p>This are progress bars in different colors.</p>
         <div class="progress mb-3">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
-            aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%"></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+            aria-valuenow="26" aria-valuemin="0" aria-valuemax="100" style="width: 26%"></div>
+        </div>
+        <div class="progress mb-3">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
         </div>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-            aria-valuenow="69" aria-valuemin="0" aria-valuemax="100" style="width: 69%"></div>
+          <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="99"
+            aria-valuemin="0" aria-valuemax="100" style="width: 99%"></div>
         </div>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#progressCode"
           aria-expanded="false" aria-controls="progressCode">
@@ -165,19 +193,23 @@
               &lt;h2&gtProgress Showcase&lt;/h2&gt
               &lt;p&gtThis are progress bars in different colors.&lt;/p&gt
               &lt;div class="progress mb-3"&gt
-                &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
-                  aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%"&gt&lt;/div&gt
+                &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                  aria-valuenow="26" aria-valuemin="0" aria-valuemax="100" style="width: 26%"&gt&lt;/div&gt
+              &lt;/div&gt
+              &lt;div class="progress mb-3"&gt
+                &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"&gt&lt;/div&gt
               &lt;/div&gt
               &lt;div class="progress"&gt
-                &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-                  aria-valuenow="69" aria-valuemin="0" aria-valuemax="100" style="width: 69%"&gt&lt;/div&gt
+                &lt;div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                  aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%"&gt&lt;/div&gt
               &lt;/div&gt
             </pre>
         </div>
       </div>
     </div>
 
-    <div id="Jumbotron Showcase anchor" class="anchor" ></div>
+    <div id="Jumbotron Showcase anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Jumbotron Showcase</h2>
@@ -208,8 +240,8 @@
       </div>
     </div>
 
-    
-    <div id="Modal Showcase anchor" class="anchor" ></div>
+
+    <div id="Modal Showcase anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Modal Showcase</h2>
@@ -261,7 +293,7 @@
       </div>
     </div>
 
-    <div id="Media Showcase anchor" class="anchor" ></div>
+    <div id="Media Showcase anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Media Showcase</h2>
@@ -293,7 +325,7 @@
       </div>
     </div>
 
-    <div id="Carousel Showcase anchor" class="anchor" ></div>
+    <div id="Carousel Showcase anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Carousel Showcase</h2>
@@ -370,34 +402,34 @@
       </div>
     </div>
 
-    <div id="Alert Showcase anchor" class="anchor" ></div>
+    <div id="Alert Showcase anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Alert Showcase</h2>
         <p>This are alerts. You can give each alert different :colors:.</p>
         <div class="alert alert-primary" role="alert">
-          A simple :primary: alert—check it out!
+          A simple :primary: alert—primary I'm blue da ba dee da ba daa !
         </div>
         <div class="alert alert-secondary" role="alert">
-          A simple :secondary: alert—check it out!
+          A simple :secondary: alert—secondary Lightgray... dont ask me!
         </div>
         <div class="alert alert-success" role="alert">
-          A simple :success: alert—check it out!
+          A simple :success: alert—sucess Money color!
         </div>
         <div class="alert alert-danger" role="alert">
-          A simple :danger: alert—check it out!
+          A simple :danger: alert—danger NullReferenceException(Humour not found)!
         </div>
         <div class="alert alert-warning" role="alert">
-          A simple :warning: alert—check it out!
+          A simple :warning: alert-warning Spongebob!
         </div>
         <div class="alert alert-info" role="alert">
-          A simple :info: alert—check it out!
+          A simple :info: alert—info Caribic water color!
         </div>
         <div class="alert alert-light" role="alert">
-          A simple :light: alert-don't check this one out!
+          A simple :light: alert-light The light within me!
         </div>
         <div class="alert alert-dark" role="alert">
-          A simple :dark: alert—check it out!
+          A simple :dark: alert—dark I'm dark. Please don't shoot!
         </div>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#alertCode"
           aria-expanded="false" aria-controls="alertCode">
@@ -435,17 +467,17 @@
         </div>
       </div>
     </div>
-    
-    <div id="Button Group Showcase anchor" class="anchor" ></div>
+
+    <div id="Button Group Showcase anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Button Group Showcase</h2>
         <p>This is a button group. The buttons dont do anything... or do they?</p>
         <div class="btn-group" role="group" aria-label="Button Group Example">
-          <button type="button" class="btn btn-secondary">First button</button>
-          <button type="button" class="btn btn-secondary">Second</button>
-          <button type="button" class="btn btn-secondary">What comes after second</button>
-          <button type="button" class="btn btn-secondary">Whatever</button>
+          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('a')">First button</button>
+          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('k')">Second</button>
+          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('c')">What comes after second</button>
+          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('e')">Whatever</button>
         </div>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#buttonGroupCode"
           aria-expanded="false" aria-controls="buttonGroupCode">
@@ -465,8 +497,8 @@
         </div>
       </div>
     </div>
-        
-    <div id="Card Showcase anchor" class="anchor" ></div>
+
+    <div id="Card Showcase anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Card Showcase</h2>
@@ -495,8 +527,8 @@
       </div>
     </div>
 
-        
-    <div id="Tooltipp Showcase anchor" class="anchor" ></div>
+
+    <div id="Tooltipp Showcase anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Tooltipp Showcase</h2>
@@ -539,34 +571,34 @@
       </div>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Love memes</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img id="randomMeme" src=""></img>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Hope you had fun</button>
-          </div>
+    <div class="modal fade" id="theHiddenCake" tabindex="-1" role="dialog" aria-labelledby="theHiddenCakeLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="etheHiddenCakeLabel">Dont tell anyone</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="theCake" src="./theCakeIsALie.jpg"></img>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Portal back to the Website</button>
         </div>
       </div>
     </div>
+  </div>
   </main>
 
   <footer>
-      <div class="jumbotron jumbotron-fluid">
-          <div class="container text-center">
-            <h1 class="display-3 ">This would be the perfect place</h1>
-            <p class="lead ">for the imprint.</p>
-            <hr class="my-2">
-          </div>
+    <div id="footerJumbo" class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1 class="display-3 ">This would be the perfect place</h1>
+        <p class="lead ">for the imprint.</p>
+        <hr class="my-2">
+      </div>
   </footer>
 
   <!-- Optional JavaScript -->
@@ -584,16 +616,17 @@
 
 </body>
 <script>
-var allHeaders = document.querySelectorAll("h2");
-allHeaders.forEach(element => {
-  var list = document.getElementById("myList");
-  const listitem = document.createElement("li");
-  listitem.innerHTML = '<a class="nav-link" href="#'+element.textContent + ' anchor">' + element.textContent +'</a>';
-  listitem.className = "nav-item active";
-  list.append(listitem);
-});
-  
+  var allHeaders = document.querySelectorAll("h2");
+  allHeaders.forEach(element => {
+    var list = document.getElementById("myList");
+    const listitem = document.createElement("li");
+    listitem.innerHTML = '<a class="nav-link" href="#' + element.textContent + ' anchor">' + element.textContent + '</a>';
+    listitem.className = "nav-item active";
+    list.append(listitem);
+  });
+
   AOS.init();
+  var theVariableIsALie = "";
 
   function getRandomImage() {
     var rnd = Math.floor(Math.random() * 20) + 1;
@@ -605,9 +638,41 @@ allHeaders.forEach(element => {
     a.play();
   }
 
-  $('.navbar-collapse a').click(function(){
-            $(".navbar-collapse").collapse('hide');
-        });
+  $('.navbar-collapse a').click(function () {
+    $(".navbar-collapse").collapse('hide');
+  });
+
+  function theFunctionIsALie(letter) {
+    theVariableIsALie += letter
+    console.log(theVariableIsALie);
+
+    for (var i = 0; i < theVariableIsALie.length; i++) {
+      if (i === 0 && theVariableIsALie.charAt(0) !== "c") {
+        theVariableIsALie = "";
+      }
+      else if (i === 1 && theVariableIsALie.charAt(1) !== "a") {
+        theVariableIsALie = "";
+      }
+      else if (i === 2 && theVariableIsALie.charAt(2) !== "k") {
+        theVariableIsALie = "";
+      }
+      else if (i === 3 && theVariableIsALie.charAt(3) !== "e") {
+        theVariableIsALie = "";
+      }
+      else if(theVariableIsALie.length === 4){
+        theVariableIsALie = "";
+        showTheCake();
+      }
+    }
+  }
+
+  function showTheCake(){
+    $('#theHiddenCake').modal('toggle')
+  }
+
+  $('.navbar-collapse a').click(function () {
+    $(".navbar-collapse").collapse('hide');
+  });
 </script>
 
 </html>
