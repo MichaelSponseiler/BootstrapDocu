@@ -13,51 +13,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    body,
-    html {
-      height: 100%;
-    }
-
-    #footerJumbo {
-      margin-bottom: 0;
-    }
-
-    .modal-dialog{
-      max-width:fit-content !important;
-    }
-
-    .anchor {
-      display: block;
-      position: relative;
-      top: -100px;
-      visibility: hidden;
-    }
-
-    .jumbotron {
-      margin-top: 20px;
-    }
-
-    .codeSnippet {
-      font-family: monospace;
-    }
-
-    .previewElement {
-      margin-top: 50px;
-      text-align: center;
-      align-self: center;
-    }
-
-    .btn {
-      margin: 5px;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" alt="" href="#"><img class="image-fluid" height="50px" src="./bootstrap-4.png"></img> </a>
+      <a class="navbar-brand" href="#"><img id="bootstrapIcon" class="image-fluid" src="./bootstrap-4.png"
+          alt="Bootstrap 4 icon"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -68,12 +31,12 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
+        </ul>
       </div>
     </nav>
   </header>
 
-
-  <main class="bd-content container" role="main">
+  <main class="bd-content container">
 
     <div class="jumbotron jumbotron-fluid bg-transparent">
       <div class="container text-center">
@@ -81,12 +44,12 @@
         <p class="lead ">Memes make Your life better.</p>
         <hr class="my-2">
         <p class="lead">
-          <a class="btn btn-success btn-lg" aligne="center" onclick="getRandomImage();" data-toggle="modal"
-            data-target="#exampleModal" role="button">Random meme</a>
+          <a class="btn btn-success btn-lg" onclick="getRandomImage();" data-toggle="modal" data-target="#exampleModal"
+            role="button">Random meme</a>
         </p>
       </div>
     </div>
-    
+
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -98,7 +61,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <img id="randomMeme" src=""></img>
+            <img id="randomMeme" src="./Memes/Meme1.png" alt="Random meme">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Hope you had fun</button>
@@ -107,7 +70,7 @@
       </div>
     </div>
 
-    <div id="Spinner Showcase anchor" class="anchor"></div>
+    <div id="Spinner_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid ">
       <div class="card-body">
         <h2>Spinner Showcase</h2>
@@ -141,37 +104,39 @@
         </button>
         <div class="collapse" id="spinnerCode">
           <pre class="card text-left">
-            &lt;h2&gtSpinner Showcase&lt;/h2&gt
-            &lt;p&gtWonderfull fidged.... no just loding spinners.&lt;/p&gt
-            &lt;div class="pb-5"&gt
-              &lt;div class="spinner-border text-primary" role="status"&gt
-                &lt;span class="sr-only"&gtLoading...&lt;/span&gt
-              &lt;/div&gt
-              &lt;div class="spinner-border text-secondary" role="status"&gt
-                &lt;span class="sr-only"&gtLoading...&lt;/span&gt
-              &lt;/div&gt
-              &lt;div class="spinner-border text-success" role="status"&gt
-                &lt;span class="sr-only"&gtLoading...&lt;/span&gt
-              &lt;/div&gt
-              &lt;div class="spinner-border text-danger" role="status"&gt
-                &lt;span class="sr-only"&gtLoading...&lt;/span&gt
-              &lt;/div&gt
-              &lt;div class="spinner-border text-warning" role="status"&gt
-                &lt;span class="sr-only"&gtLoading...&lt;/span&gt
-              &lt;/div&gt
-              &lt;div class="spinner-border text-info" role="status"&gt
-                &lt;span class="sr-only"&gtLoading...&lt;/span&gt
-              &lt;/div&gt
-              &lt;div class="spinner-border text-dark" role="status"&gt
-                &lt;span class="sr-only"&gtLoading...&lt;/span&gt
-              &lt;/div&gt
-            &lt;/div&gt
+            <code>
+                &lt;h2&gt;Spinner Showcase&lt;/h2&gt;
+                &lt;p&gt;Wonderfull fidged.... no just loding spinners.&lt;/p&gt;
+                &lt;div class="pb-5"&gt;
+                  &lt;div class="spinner-border text-primary" role="status"&gt;
+                    &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class="spinner-border text-secondary" role="status"&gt;
+                    &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class="spinner-border text-success" role="status"&gt;
+                    &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class="spinner-border text-danger" role="status"&gt;
+                    &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class="spinner-border text-warning" role="status"&gt;
+                    &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class="spinner-border text-info" role="status"&gt;
+                    &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class="spinner-border text-dark" role="status"&gt;
+                    &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
           </pre>
         </div>
       </div>
     </div>
 
-    <div id="Progress Showcase anchor" class="anchor"></div>
+    <div id="Progress_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Progress Showcase</h2>
@@ -194,26 +159,26 @@
         </button>
         <div class="collapse" id="progressCode">
           <pre class="card text-left">
-              &lt;h2&gtProgress Showcase&lt;/h2&gt
-              &lt;p&gtThis are progress bars in different colors.&lt;/p&gt
-              &lt;div class="progress mb-3"&gt
+              &lt;h2&gt;Progress Showcase&lt;/h2&gt;
+              &lt;p&gt;This are progress bars in different colors.&lt;/p&gt;
+              &lt;div class="progress mb-3"&gt;
                 &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
-                  aria-valuenow="26" aria-valuemin="0" aria-valuemax="100" style="width: 26%"&gt&lt;/div&gt
-              &lt;/div&gt
-              &lt;div class="progress mb-3"&gt
+                  aria-valuenow="26" aria-valuemin="0" aria-valuemax="100" style="width: 26%"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="progress mb-3"&gt;
                 &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
-                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"&gt&lt;/div&gt
-              &lt;/div&gt
-              &lt;div class="progress"&gt
+                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="progress"&gt;
                 &lt;div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
-                  aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%"&gt&lt;/div&gt
-              &lt;/div&gt
+                  aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%"&gt;&lt;/div&gt;
+              &lt;/div&gt;
             </pre>
         </div>
       </div>
     </div>
 
-    <div id="Jumbotron Showcase anchor" class="anchor"></div>
+    <div id="Jumbotron_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Jumbotron Showcase</h2>
@@ -231,21 +196,21 @@
         </div>
         <div class="collapse" id="jumbotronCode">
           <pre class="card text-left">
-              &lt;h2&gtJumbotron Showcase&lt;/h2&gt
-              &lt;p&gtThis is a jumbotron.&lt;/p&gt
-              &lt;div class="jumbotron bg-transparent"&gt
-                &lt;h3 class="display-5"&gtI'm a Jumbotron showing a digimon.&lt;/h3&gt
-                &lt;hr class="my-4"&gt
-                &lt;img class="img-fluid" src="./digimon.jpg" data-aos="flip-left" alt="This is a picture of digimon."&gt
-                &lt;p&gtThis is digimon.&lt;/p&gt
-                &lt;a class="btn btn-primary btn-lg" href="https://de.wikipedia.org/wiki/Digimon" role="button"&gtLearn more&lt;/a&gt
+              &lt;h2&gt;Jumbotron Showcase&lt;/h2&gt;
+              &lt;p&gt;This is a jumbotron.&lt;/p&gt;
+              &lt;div class="jumbotron bg-transparent"&gt;
+                &lt;h3 class="display-5"&gt;I'm a Jumbotron showing a digimon.&lt;/h3&gt;
+                &lt;hr class="my-4"&gt;
+                &lt;img class="img-fluid" src="./digimon.jpg" data-aos="flip-left" alt="This is a picture of digimon."&gt;
+                &lt;p&gt;This is digimon.&lt;/p&gt;
+                &lt;a class="btn btn-primary btn-lg" href="https://de.wikipedia.org/wiki/Digimon" role="button"&gt;Learn more&lt;/a&gt;
               </pre>
         </div>
       </div>
     </div>
 
 
-    <div id="Modal Showcase anchor" class="anchor"></div>
+    <div id="Modal_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Modal Showcase</h2>
@@ -260,24 +225,24 @@
         </button>
         <div class="collapse" id="modalCode">
           <pre class="card text-left">
-              &lt;h2&gtModal Showcase&lt;/h2&gt
-              &lt;p&gtThis is a modal.&lt;/p&gt
-              &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal"&gt
+              &lt;h2&gt;Modal Showcase&lt;/h2&gt;
+              &lt;p&gt;This is a modal.&lt;/p&gt;
+              &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal"&gt;
                 Delete
-              &lt;/button&gt
-              &lt;div class="modal fade" id="Modal" tabindex="-1" role="dialog"&gt
-                &lt;div class="modal-dialog modal-dialog-centered" role="document"&gt
-                  &lt;div class="modal-content"&gt
-                    &lt;div class="modal-header font-weight-bold"&gt
+              &lt;/button&gt;
+              &lt;div class="modal fade" id="Modal" tabindex="-1" role="dialog"&gt;
+                &lt;div class="modal-dialog modal-dialog-centered" role="document"&gt;
+                  &lt;div class="modal-content"&gt;
+                    &lt;div class="modal-header font-weight-bold"&gt;
                       It's just a prank bro.
-                    &lt;/div&gt
-                    &lt;div class="modal-footer"&gt
-                      &lt;button type="button" class="btn btn-secondary"&gtnot funny&lt;/button&gt
-                      &lt;button type="button" class="btn btn-primary" data-dismiss="modal"&gtfunny :D&lt;/button&gt
-                    &lt;/div&gt
-                  &lt;/div&gt
-                &lt;/div&gt
-              &lt;/div&gt
+                    &lt;/div&gt;
+                    &lt;div class="modal-footer"&gt;
+                      &lt;button type="button" class="btn btn-secondary"&gt;not funny&lt;/button&gt;
+                      &lt;button type="button" class="btn btn-primary" data-dismiss="modal"&gt;funny :D&lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
           </pre>
         </div>
       </div>
@@ -297,7 +262,7 @@
       </div>
     </div>
 
-    <div id="Media Showcase anchor" class="anchor"></div>
+    <div id="Media_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-left" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Media Showcase</h2>
@@ -314,22 +279,22 @@
           </button>
           <div class="collapse" id="mediaCode">
             <pre class="card text-left">
-              &lt;h2&gtMedia Showcase&lt;/h2&gt
-              &lt;p&gtLe media object.&lt;/p&gt
-              &lt;div class="media embed-responsive"&gt
+              &lt;h2&gt;Media Showcase&lt;/h2&gt;
+              &lt;p&gt;Le media object.&lt;/p&gt;
+              &lt;div class="media embed-responsive"&gt;
                 &lt;img src="https://media.giphy.com/media/jRwQlDxgQuLsn1L1ZM/giphy.gif" class="img-fluid mr-3"
                   data-aos="flip-left"
-                  alt="Just some falling nope's."&gt
-                &lt;div class="media-body pt-2"&gt
-                  &lt;h5 class="mt-0"&gtHello :)&lt;/h5&gt
-              &lt;/div&gt
+                  alt="Just some falling nope's."&gt;
+                &lt;div class="media-body pt-2"&gt;
+                  &lt;h5 class="mt-0"&gt;Hello :)&lt;/h5&gt;
+              &lt;/div&gt;
           </pre>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="Carousel Showcase anchor" class="anchor"></div>
+    <div id="Carousel_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Carousel Showcase</h2>
@@ -372,41 +337,41 @@
         </button>
         <div class="collapse" id="carouselCode">
           <pre class="card text-left">
-                &lt;h2&gtCarousel Showcase&lt;/h2&gt
-                &lt;p&gtThis is a pokemon carousel.&lt;/p&gt
-                &lt;div class="carousel slide" data-ride="carousel"&gt
-                    &lt;div class="carousel-inner" data-aos="flip-left"&gt
-                        &lt;div class="carousel-item active"&gt
-                          &lt;img src="https://wallpapercave.com/wp/wp2860854.jpg" class="d-block w-100" alt="PO"&gt
-                        &lt;/div&gt
-                        &lt;div class="carousel-item"&gt
-                          &lt;img src="https://wallpapercave.com/wp/wp4717678.jpg" class="d-block w-100" alt="KE"&gt
-                        &lt;/div&gt
-                        &lt;div class="carousel-item"&gt
-                          &lt;img src="https://wallpapercave.com/wp/wp2860892.jpg" class="d-block w-100" alt="MON"&gt
-                        &lt;/div&gt
-                        &lt;div class="carousel-item"&gt
-                          &lt;img src="https://wallpapercave.com/wp/wp4717747.jpg" class="d-block w-100" alt="Gona catch"&gt
-                        &lt;/div&gt
-                        &lt;div class="carousel-item"&gt
-                          &lt;img src="https://wallpapercave.com/wp/wp4717753.png" class="d-block w-100" alt="Them all."&gt
-                        &lt;/div&gt        
-                      &lt;/div&gt
-                  &lt;a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"&gt
-                    &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt&lt;/span&gt
-                    &lt;span class="sr-only"&gtPrevious&lt;/span&gt
-                  &lt;/a&gt
-                  &lt;a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"&gt
-                    &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt&lt;/span&gt
-                    &lt;span class="sr-only"&gtNext&lt;/span&gt
-                  &lt;/a&gt
-                &lt;/div&gt
+                &lt;h2&gt;Carousel Showcase&lt;/h2&gt;
+                &lt;p&gt;This is a pokemon carousel.&lt;/p&gt;
+                &lt;div class="carousel slide" data-ride="carousel"&gt;
+                    &lt;div class="carousel-inner" data-aos="flip-left"&gt;
+                        &lt;div class="carousel-item active"&gt;
+                          &lt;img src="https://wallpapercave.com/wp/wp2860854.jpg" class="d-block w-100" alt="PO"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="carousel-item"&gt;
+                          &lt;img src="https://wallpapercave.com/wp/wp4717678.jpg" class="d-block w-100" alt="KE"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="carousel-item"&gt;
+                          &lt;img src="https://wallpapercave.com/wp/wp2860892.jpg" class="d-block w-100" alt="MON"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="carousel-item"&gt;
+                          &lt;img src="https://wallpapercave.com/wp/wp4717747.jpg" class="d-block w-100" alt="Gona catch"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="carousel-item"&gt;
+                          &lt;img src="https://wallpapercave.com/wp/wp4717753.png" class="d-block w-100" alt="Them all."&gt;
+                        &lt;/div&gt;        
+                      &lt;/div&gt;
+                  &lt;a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"&gt;
+                    &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                    &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+                  &lt;/a&gt;
+                  &lt;a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"&gt;
+                    &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                    &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
             </pre>
         </div>
       </div>
     </div>
 
-    <div id="Alert Showcase anchor" class="anchor"></div>
+    <div id="Alert_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Alert Showcase</h2>
@@ -441,38 +406,38 @@
         </button>
         <div class="collapse" id="alertCode">
           <pre class="card text-left">
-                  &lt;h2&gtAlert Showcase&lt;/h2&gt
-                  &lt;p&gtThis are alerts. You can give each alert different :colors:.&lt;/p&gt
-                  &lt;div class="alert alert-primary" role="alert"&gt
+                  &lt;h2&gt;Alert Showcase&lt;/h2&gt;
+                  &lt;p&gt;This are alerts. You can give each alert different :colors:.&lt;/p&gt;
+                  &lt;div class="alert alert-primary" role="alert"&gt;
                     A simple :primary: alert—check it out!
-                  &lt;/div&gt
-                  &lt;div class="alert alert-secondary" role="alert"&gt
+                  &lt;/div&gt;
+                  &lt;div class="alert alert-secondary" role="alert"&gt;
                     A simple :secondary: alert—check it out!
-                  &lt;/div&gt
-                  &lt;div class="alert alert-success" role="alert"&gt
+                  &lt;/div&gt;
+                  &lt;div class="alert alert-success" role="alert"&gt;
                     A simple :success: alert—check it out!
-                  &lt;/div&gt
-                  &lt;div class="alert alert-danger" role="alert"&gt
+                  &lt;/div&gt;
+                  &lt;div class="alert alert-danger" role="alert"&gt;
                     A simple :danger: alert—check it out!
-                  &lt;/div&gt
-                  &lt;div class="alert alert-warning" role="alert"&gt
+                  &lt;/div&gt;
+                  &lt;div class="alert alert-warning" role="alert"&gt;
                     A simple :warning: alert—check it out!
-                  &lt;/div&gt
-                  &lt;div class="alert alert-info" role="alert"&gt
+                  &lt;/div&gt;
+                  &lt;div class="alert alert-info" role="alert"&gt;
                     A simple :info: alert—check it out!
-                  &lt;/div&gt
-                  &lt;div class="alert alert-light" role="alert"&gt
+                  &lt;/div&gt;
+                  &lt;div class="alert alert-light" role="alert"&gt;
                     A simple :light: alert-don't check this one out!
-                  &lt;/div&gt
-                  &lt;div class="alert alert-dark" role="alert"&gt
+                  &lt;/div&gt;
+                  &lt;div class="alert alert-dark" role="alert"&gt;
                     A simple :dark: alert—check it out!
-                  &lt;/div&gt
+                  &lt;/div&gt;
               </pre>
         </div>
       </div>
     </div>
 
-    <div id="Button Group Showcase anchor" class="anchor"></div>
+    <div id="Button_Group_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Button Group Showcase</h2>
@@ -480,7 +445,8 @@
         <div class="btn-group" role="group" aria-label="Button Group Example">
           <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('a')">First button</button>
           <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('k')">Second</button>
-          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('c')">What comes after second</button>
+          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('c')">What comes after
+            second</button>
           <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('e')">Whatever</button>
         </div>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#buttonGroupCode"
@@ -489,27 +455,29 @@
         </button>
         <div class="collapse" id="buttonGroupCode">
           <pre class="card text-left">
-                    &lt;h2&gtButton Group Showcase&lt;/h2&gt
-                    &lt;p&gtThis is a button group. The buttons dont do anything... or do they?&lt;/p&gt
-                    &lt;div class="btn-group" role="group" aria-label="Button Group Example"&gt
-                        &lt;button type="button" class="btn btn-secondary"&gtFirst button&lt;/button&gt
-                        &lt;button type="button" class="btn btn-secondary"&gtSecond&lt;/button&gt
-                        &lt;button type="button" class="btn btn-secondary"&gtWhat comes after second&lt;/button&gt
-                        &lt;button type="button" class="btn btn-secondary"&gtWhatever&lt;/button&gt   
-                    &lt;/div&gt
+            <code>
+                &lt;h2&gt;Button Group Showcase&lt;/h2&gt;
+                &lt;p&gt;This is a button group. The buttons dont do anything... or do they?&lt;/p&gt;
+                &lt;div class="btn-group" role="group" aria-label="Button Group Example"&gt;
+                    &lt;button type="button" class="btn btn-secondary"&gt;First button&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-secondary"&gt;Second&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-secondary"&gt;What comes after second&lt;/button&gt;
+                    &lt;button type="button" class="btn btn-secondary"&gt;Whatever&lt;/button&gt;   
+                &lt;/div&gt;
+            </code>
                 </pre>
         </div>
       </div>
     </div>
 
-    <div id="Card Showcase anchor" class="anchor"></div>
+    <div id="Card_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Card Showcase</h2>
         <p>Show me someone who dont like this.</p>
         <div class="card w-100">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="1004" height="753" src="https://www.youtube.com/embed/rg6CiPI6h2g" frameborder="0"
+            <iframe width="1004" height="753" src="https://www.youtube.com/embed/rg6CiPI6h2g"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
@@ -519,20 +487,20 @@
         </button>
         <div class="collapse" id="cardCode">
           <pre class="card text-left">
-                  &lt;h2&gtCard Showcase&lt;/h2&gt
-                  &lt;p&gtThis is a card.&lt;/p&gt
-                  &lt;div class="card w-100"&gt
-                    &lt;div class="embed-responsive embed-responsive-16by9"&gt
-                      &lt;iframe class="embed-responsive-item card-img-top p-1" src="https://www.youtube.com/watch?v=rg6CiPI6h2g" data-aos="flip-left" allowfullscreen&gt&lt;/iframe&gt
-                    &lt;/div&gt
-                  &lt;/div&gt
+                  &lt;h2&gt;Card Showcase&lt;/h2&gt;
+                  &lt;p&gt;This is a card.&lt;/p&gt;
+                  &lt;div class="card w-100"&gt;
+                    &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+                      &lt;iframe class="embed-responsive-item card-img-top p-1" src="https://www.youtube.com/watch?v=rg6CiPI6h2g" data-aos="flip-left" allowfullscreen&gt;&lt;/iframe&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
           </pre>
         </div>
       </div>
     </div>
 
 
-    <div id="Tooltipp Showcase anchor" class="anchor"></div>
+    <div id="Tooltipp_Showcase_anchor" class="anchor"></div>
     <div data-aos="fade-right" class="previewElement border border-success rounded container-fluid">
       <div class="card-body">
         <h2>Tooltipp Showcase</h2>
@@ -540,15 +508,15 @@
         <div class="row align-center">
           <div class="card m-5">
             <img src="./Pokemon/glumanda.png" data-toggle="tooltip" onclick="playPokemonSound('glumanda')"
-              title="Click to hear his roaw"></img>
+              title="Click to hear his roaw">
           </div>
           <div class="card m-5">
             <img src="./Pokemon/glutexo.png" data-toggle="tooltip" onclick="playPokemonSound('glutexo')"
-              title="Click to hear his roaw"></img>
+              title="Click to hear his roaw">
           </div>
           <div class="card m-5">
             <img src="./Pokemon/glurak.png" data-toggle="tooltip" onclick="playPokemonSound('glurak')"
-              title="Click to hear his roaw"></img>
+              title="Click to hear his roaw">
           </div>
         </div>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tooltipCode"
@@ -557,43 +525,43 @@
         </button>
         <div class="collapse" id="tooltipCode">
           <pre class="card text-left">
-            &lt;h2&gtTooltipp Showcase&lt;/h2&gt
-            &lt;p&gtTooltipps&lt;/p&gt
-            &lt;div class="row align-center"&gt
-              &lt;div class="card m-5"&gt
-                  &lt;img  src="./Pokemon/glumanda.png" data-toggle="tooltip" onclick="playPokemonSound('glumanda')" title="Click to hear his roaw"&gt&lt;/img&gt
-              &lt;/div&gt
-              &lt;div class="card m-5"&gt
-                  &lt;img  src="./Pokemon/glutexo.png" data-toggle="tooltip" onclick="playPokemonSound('glutexo')" title="Click to hear his roaw"&gt&lt;/img&gt
-              &lt;/div&gt
-              &lt;div class="card m-5"&gt
-                  &lt;img src="./Pokemon/glurak.png" data-toggle="tooltip" onclick="playPokemonSound('glurak')" title="Click to hear his roaw"&gt&lt;/img&gt
-              &lt;/div&gt
-            &lt;/div&gt
+            &lt;h2&gt;Tooltipp Showcase&lt;/h2&gt;
+            &lt;p&gt;Tooltipps&lt;/p&gt;
+            &lt;div class="row align-center"&gt;
+              &lt;div class="card m-5"&gt;
+                  &lt;img  src="./Pokemon/glumanda.png" data-toggle="tooltip" onclick="playPokemonSound('glumanda')" title="Click to hear his roaw"&gt;&lt;/img&gt;
+              &lt;/div&gt;
+              &lt;div class="card m-5"&gt;
+                  &lt;img  src="./Pokemon/glutexo.png" data-toggle="tooltip" onclick="playPokemonSound('glutexo')" title="Click to hear his roaw"&gt;&lt;/img&gt;
+              &lt;/div&gt;
+              &lt;div class="card m-5"&gt;
+                  &lt;img src="./Pokemon/glurak.png" data-toggle="tooltip" onclick="playPokemonSound('glurak')" title="Click to hear his roaw"&gt;&lt;/img&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
          </pre>
         </div>
       </div>
     </div>
 
     <div class="modal fade" id="theHiddenCake" tabindex="-1" role="dialog" aria-labelledby="theHiddenCakeLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="etheHiddenCakeLabel">Dont tell anyone</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img id="theCake" src="./theCakeIsALie.jpg"></img>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Portal back to the Website</button>
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="theHiddenCakeLabel">Dont tell anyone</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="theCake" src="./theCakeIsALie.jpg" alt="the cake from the portal game">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Portal back to the Website</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </main>
 
   <footer>
@@ -603,10 +571,12 @@
         <p class="lead ">for the imprint.</p>
         <hr class="my-2">
       </div>
+    </div>
   </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -617,66 +587,8 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="myScripts.js"></script>
 
 </body>
-<script>
-  var allHeaders = document.querySelectorAll("h2");
-  allHeaders.forEach(element => {
-    var list = document.getElementById("myList");
-    const listitem = document.createElement("li");
-    listitem.innerHTML = '<a class="nav-link" href="#' + element.textContent + ' anchor">' + element.textContent + '</a>';
-    listitem.className = "nav-item active";
-    list.append(listitem);
-  });
-
-  AOS.init();
-  var theVariableIsALie = "";
-
-  function getRandomImage() {
-    var rnd = Math.floor(Math.random() * 20) + 1;
-    document.getElementById('randomMeme').src = './Memes/Meme' + rnd + '.bmp';
-  };
-
-  function playPokemonSound(name) {
-    var a = new Audio("./Pokemon/" + name + ".wav")
-    a.play();
-  }
-
-  $('.navbar-collapse a').click(function () {
-    $(".navbar-collapse").collapse('hide');
-  });
-
-  function theFunctionIsALie(letter) {
-    theVariableIsALie += letter
-    console.log(theVariableIsALie);
-
-    for (var i = 0; i < theVariableIsALie.length; i++) {
-      if (i === 0 && theVariableIsALie.charAt(0) !== "c") {
-        theVariableIsALie = "";
-      }
-      else if (i === 1 && theVariableIsALie.charAt(1) !== "a") {
-        theVariableIsALie = "";
-      }
-      else if (i === 2 && theVariableIsALie.charAt(2) !== "k") {
-        theVariableIsALie = "";
-      }
-      else if (i === 3 && theVariableIsALie.charAt(3) !== "e") {
-        theVariableIsALie = "";
-      }
-      else if(theVariableIsALie.length === 4){
-        theVariableIsALie = "";
-        showTheCake();
-      }
-    }
-  }
-
-  function showTheCake(){
-    $('#theHiddenCake').modal('toggle')
-  }
-
-  $('.navbar-collapse a').click(function () {
-    $(".navbar-collapse").collapse('hide');
-  });
-</script>
 
 </html>

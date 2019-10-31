@@ -1,0 +1,41 @@
+  body,
+    html {
+      height: 100%;
+    }
+
+    #footerJumbo {
+      margin-bottom: 0;
+    }
+
+    .modal-dialog{
+      max-width:fit-content !important;
+    }
+
+    .anchor {
+      display: block;
+      position: relative;
+      top: -100px;
+      visibility: hidden;
+    }
+
+    .jumbotron {
+      margin-top: 20px;
+    }
+
+    .codeSnippet {
+      font-family: monospace;
+    }
+
+    .previewElement {
+      margin-top: 50px;
+      text-align: center;
+      align-self: center;
+    }
+
+    #bootstrapIcon{
+        height: 50px;
+    }
+
+    .btn {
+      margin: 5px;
+    }
