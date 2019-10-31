@@ -386,7 +386,7 @@
           A simple :success: alert—sucess Money color!
         </div>
         <div class="alert alert-danger" role="alert">
-          A simple :danger: alert—danger NullReferenceException(Humour not found)!
+          A simple :danger: alert—danger NullReferenceException (Humour not found)!
         </div>
         <div class="alert alert-warning" role="alert">
           A simple :warning: alert-warning Spongebob!
@@ -442,12 +442,14 @@
       <div class="card-body">
         <h2>Button Group Showcase</h2>
         <p>This is a button group. The buttons dont do anything... or do they?</p>
-        <div class="btn-group" role="group" aria-label="Button Group Example">
-          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('a')">First button</button>
-          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('k')">Second</button>
-          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('c')">What comes after
-            second</button>
-          <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('e')">Whatever</button>
+        <div class="row align-center d-block">
+          <div class="btn-group-vertical" role="group" aria-label="Button Group Example">
+            <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('a')">First button</button>
+            <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('k')">Second</button>
+            <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('c')">What comes after
+              second</button>
+            <button type="button" class="btn btn-secondary" onclick="theFunctionIsALie('e')">Whatever</button>
+          </div>
         </div>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#buttonGroupCode"
           aria-expanded="false" aria-controls="buttonGroupCode">
@@ -505,20 +507,28 @@
       <div class="card-body">
         <h2>Tooltipp Showcase</h2>
         <p>Click me to hear my roaw</p>
-        <div class="row align-center">
-          <div class="card m-5">
-            <img src="./Pokemon/glumanda.png" data-toggle="tooltip" onclick="playPokemonSound('glumanda')"
-              title="Click to hear his roaw">
+        <form>
+          <div class="form-row align-center">
+            <div class="form-group col-lg-4">
+              <div class="card m-5">
+                <img src="./Pokemon/glumanda.png" data-toggle="tooltip" onclick="playPokemonSound('glumanda')"
+                  title="Click to hear his roaw">
+              </div>
+            </div>
+            <div class="form-group col-lg-4">
+              <div class="card m-5">
+                <img src="./Pokemon/glutexo.png" data-toggle="tooltip" onclick="playPokemonSound('glutexo')"
+                  title="Click to hear his roaw">
+              </div>
+            </div>
+            <div class="form-group col-lg-4">
+              <div class="card m-5">
+                <img src="./Pokemon/glurak.png" data-toggle="tooltip" onclick="playPokemonSound('glurak')"
+                  title="Click to hear his roaw">
+              </div>
+            </div>
           </div>
-          <div class="card m-5">
-            <img src="./Pokemon/glutexo.png" data-toggle="tooltip" onclick="playPokemonSound('glutexo')"
-              title="Click to hear his roaw">
-          </div>
-          <div class="card m-5">
-            <img src="./Pokemon/glurak.png" data-toggle="tooltip" onclick="playPokemonSound('glurak')"
-              title="Click to hear his roaw">
-          </div>
-        </div>
+        </form>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tooltipCode"
           aria-expanded="false" aria-controls="tooltipCode">
           Show Code
@@ -554,7 +564,9 @@
             </button>
           </div>
           <div class="modal-body">
+              <div class="card m-5">
             <img id="theCake" src="./theCakeIsALie.jpg" alt="the cake from the portal game">
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Portal back to the Website</button>
